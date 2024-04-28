@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex flex-col items-center font-bold">
+    <h1 class="text-[4vh]">Rock - Paper - Scissors</h1>
+    <div class="my-[1vh]">
+      <button
+        onclick="playGame('rock')"
+        class="size-[10vh] rounded-full bg-blue-400 text-[5vh] active:bg-blue-300">
+        👊
+      </button>
+      <button
+        onclick="playGame('paper')"
+        class="size-[10vh] rounded-full bg-blue-400 text-[5vh] active:bg-blue-300">
+        ✋
+      </button>
+      <button
+        onclick="playGame('scissors')"
+        class="size-[10vh] rounded-full bg-blue-400 text-[5vh] active:bg-blue-300">
+        ✌️
+      </button>
+    </div>
+    <div id="playerDisplay" class="text-[3vh]">PLAYER:</div>
+    <div id="computerDisplay" class="text-[3vh]">COMPUTER:</div>
+    <div id="resultDisplay" class="text-[8vh]"></div>
+    <div class="text-[3vh]">
+      Player Score:
+      <span id="playerScoreDisplay" class="text-green-500">0</span>
+    </div>
+    <div class="text-[3vh]">
+      Computer Score:
+      <span id="computerScoreDisplay" class="text-red-500">0</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
